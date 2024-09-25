@@ -1,0 +1,46 @@
+@use "../common/tools";
+@use "../common/settings";
+@use "../common/theme";
+
+@forward "./typography";
+@forward "./animations";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+.plans {
+  &-table {
+    display: flex;
+    gap: map-get(settings.$spacers, 4);
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  &-table-column {
+    $self: &;
+    display: flex;
+    flex-direction: column;
+    gap: map-get(settings.$spacers, 12);
+    min-width: 160px;
+    &:first-of-type {
+      min-width: 280px;
+      @include tools.typography("h2");
+    }
+  }
+}
+
+.column {
+  &-title {
+    @include tools.typography("t0");
+  }
+
+  &-price {
+    @include tools.typography("h2");
+  }
+}

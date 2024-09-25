@@ -1,0 +1,119 @@
+{
+  "plans": [
+    {
+      "name": "Старт",
+      "price_per_month": "3500 ₽",
+      "restaurants": 1,
+      "options": {
+        "additional_restaurant": "недоступно",
+        "loyalty": "9000 ₽"
+      },
+      "menu_management": {
+        "menu_management": true,
+        "modifier_management": true,
+        "stop_lists": true
+      },
+      "order_receiving": {
+        "restaurant_site": true,
+        "acquiring": true,
+        "dish_constructor": false,
+        "online_order": false,
+        "iOS_app": false,
+        "android_app": false
+      }
+    },
+    {
+      "name": "Базовый",
+      "price_per_month": "7500 ₽",
+      "restaurants": 3,
+      "options": {
+        "additional_restaurant": "недоступно",
+        "loyalty": "9000 ₽"
+      },
+      "menu_management": {
+        "menu_management": true,
+        "modifier_management": true,
+        "stop_lists": true
+      },
+      "order_receiving": {
+        "restaurant_site": true,
+        "acquiring": true,
+        "dish_constructor": true,
+        "online_order": true,
+        "iOS_app": false,
+        "android_app": false
+      }
+    },
+    {
+      "name": "Про",
+      "price_per_month": "12 500 ₽",
+      "restaurants": 5,
+      "options": {
+        "additional_restaurant": "1500 ₽",
+        "loyalty": "9000 ₽"
+      },
+      "menu_management": {
+        "menu_management": true,
+        "modifier_management": true,
+        "stop_lists": true
+      },
+      "order_receiving": {
+        "restaurant_site": true,
+        "acquiring": true,
+        "dish_constructor": true,
+        "online_order": true,
+        "iOS_app": true,
+        "android_app": true
+      }
+    },
+    {
+      "name": "Про +",
+      "price_per_month": "21 500 ₽",
+      "restaurants": 7,
+      "options": {
+        "additional_restaurant": "1500 ₽",
+        "loyalty": "9000 ₽"
+      },
+      "menu_management": {
+        "menu_management": true,
+        "modifier_management": true,
+        "stop_lists": true
+      },
+      "order_receiving": {
+        "restaurant_site": true,
+        "acquiring": true,
+        "dish_constructor": true,
+        "online_order": true,
+        "iOS_app": true,
+        "android_app": true
+      }
+    },
+    {
+      "name": "Энтерпрайз",
+      "price_per_month": "61 500 ₽",
+      "restaurants": "∞",
+      "options": {
+        "additional_restaurant": "—",
+        "loyalty": "включено"
+      },
+      "menu_management": {
+        "menu_management": true,
+        "modifier_management": true,
+        "stop_lists": true
+      },
+      "order_receiving": {
+        "restaurant_site": true,
+        "acquiring": true,
+        "dish_constructor": true,
+        "online_order": true,
+        "iOS_app": true,
+        "android_app": true
+      }
+    }
+  ],
+  "discounts": {
+    "1_month": "-15%",
+    "6_months": "-30%",
+    "1_year": "-30%"
+  }
+}

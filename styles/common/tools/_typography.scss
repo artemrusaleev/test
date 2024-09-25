@@ -1,0 +1,65 @@
+$typography-variants: (
+  'h0': (
+    'font-size': 48px,
+    'line-height': 58px,
+    'font-weight': 700
+  ),
+  'h1': (
+    'font-size': 36px,
+    'line-height': 46px,
+    'font-weight': 600
+  ),
+  'h2': (
+    'font-size': 26px,
+    'line-height': 36px,
+    'font-weight': 600
+  ),
+  'h3': (
+    'font-size': 21px,
+    'line-height': 24px,
+    'font-weight': 600
+  ),
+  'h4': (
+    'font-size': 18px,
+    'line-height': 24px,
+    'font-weight': 600
+  ),
+  'h5': (
+    'font-size': 16px,
+    'line-height': 22px,
+    'font-weight': 600
+  ),
+  'h6': (
+    'font-size': 14px,
+    'line-height': 20px,
+    'font-weight': 600
+  ),
+  't0': (
+    'font-size': 26px,
+    'line-height': 36px
+  ),
+  't1': (
+    'font-size': 18px,
+    'line-height': 24px
+  ),
+  't2': (
+    'font-size': 16px,
+    'line-height': 22px
+  ),
+  't3': (
+    'font-size': 14px,
+    'line-height': 20px
+  ),
+  't4': (
+    'font-size': 12px,
+    'line-height': 18px
+  )
+);
+
+// миксин для использования в стилях
+@mixin typography($key) {
+  $variant: map-get($typography-variants, $key);
+  @each $rule, $value in $variant {
+    #{$rule}: $value;
+  }
+}

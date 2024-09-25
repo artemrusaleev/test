@@ -1,0 +1,38 @@
+@use '../common/tools';
+
+// создаем хелпер-классы
+@each $variant in map-keys(tools.$typography-variants) {
+  .text-#{$variant} {
+    @include tools.typography($variant);
+
+    @if map-has-key(tools.$typography-variants, '#{$variant}-mobile') {
+      @include tools.media-mobile {
+        @include tools.typography('#{$variant}-mobile');
+      }
+    }
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
