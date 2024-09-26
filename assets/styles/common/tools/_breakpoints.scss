@@ -2,17 +2,17 @@ $breakpoints: (
   mobile: 0px,
   tablet: 768px,
   tabletUp: 1024px,
-  desktop: 1440px
+  desktop: 1440px,
 );
 
 @mixin media-tablet {
-  @media (max-width: 1023px) {
+  @media (max-width: 1200px) {
     @content;
   }
 }
 
-@mixin medta-tablet-up {
-  @media (min-width: 1024px) {
+@mixin media-tablet-up {
+  @media (min-width: 1200px) {
     @content;
   }
 }
