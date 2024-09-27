@@ -4,23 +4,42 @@
       "name": "Старт",
       "price_per_month": "3500 ₽",
       "restaurants": 1,
-      "options": {
-        "additional_restaurant": "недоступно",
-        "loyalty": "9000 ₽"
-      },
-      "menu_management": {
-        "menu_management": true,
-        "modifier_management": true,
-        "stop_lists": true
-      },
-      "order_receiving": {
-        "restaurant_site": true,
-        "acquiring": true,
-        "dish_constructor": false,
-        "online_order": false,
-        "iOS_app": false,
-        "android_app": false
-      }
+      "options": [
+        {
+          "title": "Опции",
+          "features": [
+            {
+              "title": "Дополнительный ресторан",
+              "info": true,
+              "infoContent": "",
+              "available": {
+                "month": "недоступно",
+                "half": "недоступно",
+                "year": "недоступно"
+              }
+            },
+            {
+              "title": "Лояльность",
+              "info": true,
+              "infoContent": "",
+              "available": {
+                "month": "недоступно",
+                "half": "",
+                "year": ""
+              }
+            }
+          ]
+        },
+        {
+          "title": "Каналы приема заказов",
+          "features": [
+            {
+              "title": "Сайт",
+              "checkIcon": true
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Базовый",
